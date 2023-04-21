@@ -4,12 +4,13 @@
     "slug": "PitiColors",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/icone.png",
+    "userInterfaceStyle": "dark",
+    "androidNavigationBar": {
+      "barStyle": "light-content"
+    },
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#1d1d30"
     },
     "assetBundlePatterns": [
       "**/*"

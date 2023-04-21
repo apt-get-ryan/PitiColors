@@ -1,6 +1,7 @@
 import { Modal, View,Text, TextInput, Keyboard, StyleSheet, TouchableWithoutFeedback, TouchableOpacity } from "react-native";
 import { useContext, useState, useEffect } from "react";
 import { ColorContext, ColorProvider } from "../../../contexts/ColorProvider";
+
 const ColorModal = (props) => {
     const visibility = props.visibility;
     const{ currentColor, setCurrentColor, setModalVisibility, modalVisibility, setColors, colors } = useContext(ColorContext);
