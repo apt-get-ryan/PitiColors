@@ -2,7 +2,7 @@
   "expo": {
     "name": "PitiColors",
     "slug": "PitiColors",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "orientation": "portrait",
     "icon": "./assets/icone.png",
     "userInterfaceStyle": "dark",
@@ -20,12 +20,18 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "foregroundImage": "./assets/icone-adaptivo.png",
+        "backgroundColor": "#0A101A"
+      },
+      "package": "com.theryan809.PitiColors"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "87074bee-2ddf-4d1f-80f6-e3ad2bea24eb"
+      }
     }
   }
 }

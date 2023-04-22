@@ -4,6 +4,21 @@ import { ColorContext } from "../../contexts/ColorProvider";
 import ColorBox from "./ColorBox";
 const ColorDisplayer = () => {
     const { colors } = useContext(ColorContext);
+
+    const styles = StyleSheet.create({
+        colorDisplayer: {
+            flexDirection: 'row',
+            flexWrap: 'wrap',
+            justifyContent: colors.length <= 2 ? "center" : "space-between",
+            alignItems: 'flex-start',
+            alignContent: "flex-start",
+            padding: 7,
+            gap: 4,
+            rowGap: 8,
+            marginHorizontal: 'auto',
+    
+        }
+    })
     return (
         <View style={styles.colorDisplayer}>
             {colors.map( (color, i) => {
@@ -12,18 +27,6 @@ const ColorDisplayer = () => {
         </View>
     )
 }
-const styles = StyleSheet.create({
-    colorDisplayer: {
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        justifyContent: 'center',
-        alignItems: 'flex-start',
-        padding: 7,
-        gap: 4,
-        rowGap: 8,
-        marginHorizontal: 'auto',
 
-    }
-})
 
 export default ColorDisplayer;
